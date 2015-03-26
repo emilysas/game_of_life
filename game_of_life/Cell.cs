@@ -19,6 +19,18 @@ namespace game_of_life
 			    return false;
 			}
 		}
+			
+		public string Contents ()
+		{
+			string alive = "█";
+			string dead = "░";
+
+			if (IsAlive() == true) {
+				return alive;
+			} else {
+				return dead;
+			}
+		}
 
 
 	}

@@ -1,1 +1,18 @@
-﻿<Properties StartupItem="game_of_life/game_of_life.csproj" />
+﻿<Properties StartupItem="game_of_life/game_of_life.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="game_of_life/Test.cs">
+    <Files>
+      <File FileName="game_of_life/Test.cs" Line="11" Column="11" />
+      <File FileName="game_of_life/EmptyClass.cs" Line="3" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

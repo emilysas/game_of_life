@@ -24,7 +24,7 @@ namespace game_of_life
 		public void ACellCanBeSeenWhenAlive ()
 		{
 			Cell cell = new Cell (1);
-			Assert.AreEqual ("█", cell.ShowCell);
+			Assert.AreEqual ("█", cell.Contents ());
 		}
 	}
 }
