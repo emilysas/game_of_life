@@ -39,7 +39,7 @@ namespace game_of_life
 		{
 			Cell cell = new Cell (1);
 			cell.Die ();
-			Assert.False (Cell.IsAlive ());
+			Assert.False (cell.IsAlive ());
 	    }
 	}
 }

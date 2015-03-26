@@ -32,6 +32,11 @@ namespace game_of_life
 			}
 		}
 
+		public void Die ()
+		{
+			status = 0;
+		}
+
 
 	}
 }
