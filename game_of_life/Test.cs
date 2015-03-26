@@ -21,10 +21,17 @@ namespace game_of_life
 		}
 
 		[Test ()]
-		public void ACellCanBeSeenWhenAlive ()
+		public void ACellContainsBlackSquareWhenAlive ()
 		{
 			Cell cell = new Cell (1);
 			Assert.AreEqual ("█", cell.Contents ());
+		}
+
+		[Test ()]
+		public void ACellContainsWhiteSquareWhenDead ()
+		{
+			Cell cell = new Cell (0);
+			Assert.AreEqual ("░", cell.Contents ());
 		}
 	}
 }

@@ -36,6 +36,3 @@ namespace game_of_life
 	}
 }
 
-//string dead = ░;
-//string alive = █;
-
