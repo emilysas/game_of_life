@@ -9,8 +9,15 @@ namespace game_of_life
 		[Test ()]
 		public void CellCanBeAlive ()
 		{
-			Cell cell = new Cell ();
+			Cell cell = new Cell (1);
 			Assert.True (cell.IsAlive ());
+		}
+
+		[Test ()]
+		public void CellCanBeDead ()
+		{
+			Cell cell = new Cell (0);
+			Assert.True (cell.IsDead ());
 		}
 	}
 }
