@@ -10,6 +10,7 @@ namespace game_of_life
 		Cell deadCell;
 
 		[SetUp]
+		public void Init ()
 		{
 			liveCell = new Cell(1);
 			deadCell = new Cell(0);
