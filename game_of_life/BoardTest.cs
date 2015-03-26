@@ -18,7 +18,7 @@ namespace game_of_life
 		[Test ()]
 		public void BoardStartsWithGrid5x5 ()
 		{
-			Assert.AreEqual (25, board.CellCount);
+			Assert.AreEqual (25, board.CellCount());
 		}
 			
 	}
