@@ -71,6 +71,12 @@ namespace game_of_life
 		{
 			Assert.AreEqual (10, grid.Rows());
 		}
+
+		[Test ()]
+		public void GridStartsWith10Columns ()
+		{
+			Assert.AreEqual (10, grid.Columns());
+		}
 	}
 }
 
