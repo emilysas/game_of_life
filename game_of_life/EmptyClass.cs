@@ -6,9 +6,9 @@ namespace game_of_life
 	{
 		int status;
 
-		public Cell ()
+		public Cell (int startpoint)
 		{
-			status = 1;
+			status = startpoint;
 		}
 
 		public Boolean IsAlive ()

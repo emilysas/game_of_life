@@ -17,7 +17,7 @@ namespace game_of_life
 		public void CellCanBeDead ()
 		{
 			Cell cell = new Cell (0);
-			Assert.True (cell.IsDead ());
+			Assert.False (cell.IsAlive ());
 		}
 	}
 }
