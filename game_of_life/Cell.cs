@@ -37,6 +37,11 @@ namespace game_of_life
 			status = 0;
 		}
 
+		public void Live ()
+		{
+			status = 1;
+		}
+
 
 	}
 }
