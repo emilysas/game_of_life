@@ -19,6 +19,8 @@ namespace game_of_life
 			    return false;
 			}
 		}
+
+
 	}
 }
 

@@ -19,6 +19,13 @@ namespace game_of_life
 			Cell cell = new Cell (0);
 			Assert.False (cell.IsAlive ());
 		}
+
+		[Test ()]
+		public void ACellCanBeSeenWhenAlive ()
+		{
+			Cell cell = new Cell (1);
+			Assert.AreEqual ("█", cell.ShowCell);
+		}
 	}
 }
 
