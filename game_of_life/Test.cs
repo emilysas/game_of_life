@@ -41,6 +41,14 @@ namespace game_of_life
 			cell.Die ();
 			Assert.False (cell.IsAlive ());
 	    }
+
+		[Test ()]
+		public void ACellCanLive ()
+		{
+			Cell cell = new Cell (0);
+			cell.Live ();
+			Assert.True (cell.IsAlive ());
+		}
 	}
 }
 
