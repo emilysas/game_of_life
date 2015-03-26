@@ -35,9 +35,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cell.cs" />
-    <Compile Include="Grid.cs" />
-    <Compile Include="GridTest.cs" />
     <Compile Include="CellTest.cs" />
+    <Compile Include="Board.cs" />
+    <Compile Include="BoardTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
