@@ -6,48 +6,51 @@ namespace game_of_life
 	[TestFixture ()]
 	public class CellTest
 	{
+		Cell liveCell;
+		Cell deadCell;
+
+		[SetUp]
+		{
+			liveCell = new Cell(1);
+			deadCell = new Cell(0);
+		}
+
 		[Test ()]
 		public void CellCanBeAlive ()
 		{
-			Cell cell = new Cell (1);
-			Assert.True (cell.IsAlive ());
+			Assert.True (liveCell.IsAlive ());
 		}
 
 		[Test ()]
 		public void CellCanBeDead ()
 		{
-			Cell cell = new Cell (0);
-			Assert.False (cell.IsAlive ());
+			Assert.False (deadCell.IsAlive ());
 		}
 
 		[Test ()]
 		public void ACellContainsBlackSquareWhenAlive ()
 		{
-			Cell cell = new Cell (1);
-			Assert.AreEqual ("█", cell.Contents ());
+			Assert.AreEqual ("█", liveCell.Contents ());
 		}
 
 		[Test ()]
 		public void ACellContainsWhiteSquareWhenDead ()
 		{
-			Cell cell = new Cell (0);
-			Assert.AreEqual ("░", cell.Contents ());
+			Assert.AreEqual ("░", deadCell.Contents ());
 		}
 
 		[Test ()]
 		public void ACellCanDie ()
 		{
-			Cell cell = new Cell (1);
-			cell.Die ();
-			Assert.False (cell.IsAlive ());
+			liveCell.Die ();
+			Assert.False (liveCell.IsAlive ());
 	    }
 
 		[Test ()]
 		public void ACellCanLive ()
 		{
-			Cell cell = new Cell (0);
-			cell.Live ();
-			Assert.True (cell.IsAlive ());
+			deadCell.Live ();
+			Assert.True (deadCell.IsAlive ());
 		}
 	}
 }
