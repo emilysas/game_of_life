@@ -33,6 +33,14 @@ namespace game_of_life
 			Cell cell = new Cell (0);
 			Assert.AreEqual ("░", cell.Contents ());
 		}
+
+		[Test ()]
+		public void ACellCanDie ()
+		{
+			Cell cell = new Cell (1);
+			cell.Die ();
+			Assert.False (Cell.IsAlive ());
+	    }
 	}
 }
 
