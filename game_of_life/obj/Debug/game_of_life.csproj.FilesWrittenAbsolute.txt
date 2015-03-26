@@ -1,0 +1,2 @@
+/Users/Emily/Projects/game_of_life/game_of_life/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/Emily/Projects/game_of_life/game_of_life/bin/Debug/nunit.framework.dll
