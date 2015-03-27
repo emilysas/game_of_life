@@ -12,7 +12,7 @@ namespace game_of_life
 		[SetUp]
 		public void Init ()
 		{
-			board = new Board();
+			board = new Board(5, 5);
 		}
 
 		[Test ()]

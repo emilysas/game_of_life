@@ -6,42 +6,33 @@ namespace game_of_life
 {
 	public class Board
 	{
-		Dictionary<string, Cell> grid;
+		int width;
+		int length;
 		Cell cell;
+		Cell[,] grid;
 
-		public Board ()
+		public Board (int w, int l)
 		{
-			grid = new Dictionary<string, Cell> ();
-			cell = new Cell (0);
-			CreateGrid (cell);
+			width = w;
+			length = l;
+			grid = new Cell [width, length];
+			FillGrid ();
 		}
 
-		public void AddToGrid(string coordinates, Cell cell)
+		private void FillGrid()
 		{
-			grid.Add(coordinates, cell);
-		}
-
-		public void CreateGrid(Cell cell)
-		{
-			for (int i = 1; i <= 5; i++)
-			{
-				for (int j = 0; j < 5; j++)
-				{
-					int unicode = (0007 + j);
-					StringBuilder gridRef = new StringBuilder ();
-					gridRef.Append ("\\u")
-						.Append (unicode)
-						.Append(i);
-					string coordinate = gridRef.ToString();
-					AddToGrid(coordinate, cell);
+			for (int i = 0; i < width; i++) {
+				for (int j = 0; j < length; j++) {
+					grid[i, j] = cell;
 				}
 			}
 		}
 
 		public int CellCount()
 		{
-			return grid.Count;
+			return grid.Length;
 		}
+
 
 
 
