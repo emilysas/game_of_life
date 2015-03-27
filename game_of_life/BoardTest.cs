@@ -14,7 +14,7 @@ namespace game_of_life
 		public void Init ()
 		{
 			cell = new Cell (0);
-			board = new Board(5, 5);
+			board = new Board(5, 5, cell);
 		}
 
 		[Test ()]
@@ -26,7 +26,7 @@ namespace game_of_life
 		[Test ()]
 		public void EachSquareInGridContainsACell ()
 		{
-			Assert.AreEqual (cell, board.GridRef(0,0));
+			Assert.AreEqual  (cell, board.GridRef(0,0));
 		}
 			
 	}

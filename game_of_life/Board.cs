@@ -8,14 +8,15 @@ namespace game_of_life
 	{
 		int width;
 		int length;
-		Cell cell;
 		Cell[,] grid;
+		Cell cell;
 
-		public Board (int w, int l)
+		public Board (int w, int l, Cell c)
 		{
 			width = w;
 			length = l;
 			grid = new Cell [width, length];
+			cell = c;
 			FillGrid ();
 		}
 
@@ -31,6 +32,11 @@ namespace game_of_life
 		public int CellCount()
 		{
 			return grid.Length;
+		}
+
+		public Cell GridRef(int x_coordinate, int y_coordinate)
+		{
+			return grid [x_coordinate, y_coordinate];
 		}
 
 
